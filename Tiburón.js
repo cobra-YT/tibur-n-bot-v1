@@ -1,5 +1,5 @@
 const { WAConnection } = require('@adiwajshing/baileys');
-const fs = require('fs');
+const fs = require('Samu330.json');
 
 async function iniciar () { 
         const client = new WAConnection()
