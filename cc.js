@@ -1,5 +1,5 @@
 const { WAConnection } = require('@adiwajshing/baileys');
-const fs = require('fs');
+const fs = require('fs.existsSync('./Samu330.json') && client.loadAuthInfo('./Samu330.json')');
 
 async function iniciar () { 
         const client = new WAConnection()
@@ -9,7 +9,7 @@ async function iniciar () {
         client.on('qr', () => {
         })
 
-        fs.existsSync('./cc.json') && client.loadAuthInfo('./cc.json')
+        fs.existsSync('./Samu330.json') && client.loadAuthInfo('./Samu330.json')
 
         client.on('connecting', () => {
         console.log('Conectando')
